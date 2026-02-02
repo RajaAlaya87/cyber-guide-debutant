@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Use a repo-relative base only in production (for GitHub Pages).
+  // During development we keep '/' so things like HMR and local routing work normally.
+  base: mode === "production" ? "/cyber-guide-debutant/" : "/",
   server: {
     host: "::",
     port: 8080,
@@ -18,5 +21,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/cyber-guide-debutant/'
+  // Build to `docs/` so you can serve from the repository's docs folder via GitHub Pages.
+  // If you prefer to deploy from a gh-pages branch, you can remove or change outDir back to 'dist'.
+  build: {
+    outDir: "docs",
+    assetsDir: "assets",
+  },
 }));
