@@ -10,6 +10,7 @@ import Resultats from "./pages/Resultats";
 import Sensibilisation from "./pages/Sensibilisation";
 import Acteurs from "./pages/Acteurs";
 import Prestataires from "./pages/Prestataires";
+import Outils from "./pages/Outils";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/sensibilisation" element={<Sensibilisation />} />
             <Route path="/acteurs" element={<Acteurs />} />
             <Route path="/prestataires" element={<Prestataires />} />
+            <Route path="/outils" element={<Outils />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

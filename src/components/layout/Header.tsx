@@ -10,6 +10,7 @@ const navItems = [
   { path: "/sensibilisation", label: "Sensibilisation" },
   { path: "/acteurs", label: "Acteurs officiels" },
   { path: "/prestataires", label: "Prestataires" },
+  { path: "/outils", label: "Outils" },
 ];
 
 export const Header = () => {
