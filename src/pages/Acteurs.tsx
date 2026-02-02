@@ -30,13 +30,6 @@ const acteurs = [
     url: "https://www.cnil.fr/",
     icon: Scale,
   },
-  {
-    name: "DINUM",
-    fullName: "Direction interministérielle du numérique",
-    description: "Pilote la transformation numérique de l'État. Définit les standards et accompagne les administrations dans leur sécurisation.",
-    url: "https://www.numerique.gouv.fr/",
-    icon: Server,
-  },
 ];
 
 const Acteurs = () => {
